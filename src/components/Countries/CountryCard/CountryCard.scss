@@ -1,0 +1,25 @@
+a.card-links {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+  background-color: var(--element-bg);
+  text-decoration: none;
+}
+.country-card {
+  cursor: pointer;
+  img {
+    width: 100%;
+    height: 200px;
+  }
+  .details {
+    color: var(--text-color);
+    padding: 20px 30px 30px 30px;
+    h3 {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+.card-information {
+  background-color: var(--bg-color);
+  width: 100%;
+  height: calc(100vh - 80px);
+  padding: 60px 100px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  color: var(--text-color);
+}
+.card-information button {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 6px 50px;
+  background-color: var(--element-bg);
+  color: var(--text-color);
+  border: 0;
+  cursor: pointer;
+}
+.card-information .card-info {
+  display: flex;
+  gap: 100px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card-information .card-info > div {
+  flex: 1;
+}
+.card-information .card-info .image img {
+  width: 100%;
+  min-width: 315px;
+}
+.card-information .card-info .info {
+  min-width: 315px;
+}
+.card-information .card-info .info h3 {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+.card-information .card-info .info .more-info {
+  display: flex;
+  gap: 80px;
+}
+.card-information .card-info .info .more-info > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.card-information .card-info .info .border-countries {
+  margin-top: 50px;
+}
+.card-information .card-info .info .border-countries span {
+  padding: 0 10px;
+  background-color: var(--element-bg);
+  color: var(--text-color);
+  margin-left: 10px;
+  text-align: center;
+  font-size: 14px;
+}

@@ -1,0 +1,63 @@
+.card-information {
+  background-color: var(--bg-color);
+  width: 100%;
+  height: calc(100vh - 80px);
+  padding: 60px 100px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  color: var(--text-color);
+
+  button {
+    width: fit-content;
+    padding: 6px 50px;
+    background-color: var(--element-bg);
+    color: var(--text-color);
+    border: 0;
+    cursor: pointer;
+  }
+  .card-info {
+    display: flex;
+    gap: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    > div {
+      flex: 1;
+    }
+    .image {
+      img {
+        width: 100%;
+        min-width: 315px;
+      }
+    }
+    .info {
+      min-width: 315px;
+      h3 {
+        font-size: 30px;
+        margin-bottom: 40px;
+      }
+      .more-info {
+        display: flex;
+        gap: 80px;
+        > div {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+      }
+      .border-countries {
+        margin-top: 50px;
+        span {
+          padding: 0 10px;
+          background-color: var(--element-bg);
+          color: var(--text-color);
+          margin-left: 10px;
+          text-align: center;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

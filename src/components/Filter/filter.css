@@ -1,0 +1,66 @@
+.filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 80px;
+}
+@media (max-width: 767px) {
+  .filter {
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 10px;
+  }
+}
+.filter .search {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.filter .search svg {
+  position: absolute;
+  left: 20px;
+  font-size: 15px;
+  color: var(--gray);
+}
+.filter .search input {
+  padding: 15px 150px 15px 50px;
+  border: none;
+  background-color: var(--element-bg);
+}
+.filter .search input::-moz-placeholder {
+  color: var(--gray);
+}
+.filter .search input::placeholder {
+  color: var(--gray);
+}
+.filter .search input:focus {
+  outline: none;
+}
+.filter .filter-menu {
+  position: relative;
+  width: 200px;
+}
+.filter .filter-menu .filter-menu-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+  background-color: var(--element-bg);
+  color: var(--text-color);
+  padding: 15px 25px;
+  cursor: pointer;
+}
+.filter .filter-menu .the-menu {
+  position: absolute;
+  top: calc(100% + 5px);
+  background-color: var(--element-bg);
+  color: var(--text-color);
+  width: 200px;
+  padding: 0;
+  list-style: none;
+  padding: 10px 0 10px;
+}
+.filter .filter-menu .the-menu li {
+  padding: 6px 25px;
+  cursor: pointer;
+}
